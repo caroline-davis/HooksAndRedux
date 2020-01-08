@@ -1,0 +1,9 @@
+input {
+    background-color: lightsteelblue;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    color: darkslategray;
+    margin-bottom: 5px;
+}
