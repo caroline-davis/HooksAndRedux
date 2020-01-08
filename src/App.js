@@ -17,15 +17,18 @@ function App() {
   const [foods, setFoods] = useState([])
 
   const [address, setAddress] = useState([])
-  const[loading, setLoading] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function loadAddress () {
       const address = await getAddress()
       setAddress(address)
+      setLoading(false)
     }
-    loadAddress()
-   }, [])
+    if (loading === true) {
+      loadAddress()
+    }
+   }, [loading])
 
   return (
     <div className="container">
@@ -80,7 +83,7 @@ function App() {
      </div>
     )}
     <div>
-      {console.log(address.city)}
+      
       {address.city} {address.country}
     </div>
 
