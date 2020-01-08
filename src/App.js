@@ -17,7 +17,7 @@ function App() {
   const [food, setFood] = useState("")
   const [foods, setFoods] = useState([])
 
-  const [address, setAddress] = useState([])
+  const [address, setAddress] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -84,13 +84,16 @@ function App() {
      </div>
     )}
     <div>
-      
-      {address.city} {address.country}
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div>
+            {address.city} {address.country}
+          </div>
+        )}
+      </div>
+      <Weather />
     </div>
-     <Weather />
-
-    </div>
-
   );
 }
 
