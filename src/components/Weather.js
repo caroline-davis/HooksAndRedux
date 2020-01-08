@@ -2,18 +2,18 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
-function Weather() {
+function Weather(props) {
     return (
         <div>
-
-
+            {"hotttt"}
+            {props.label}
         </div>
     )
 }
 
 const mapStateToProps = state => {
     return {
-        wthr: state.wthr.weather
+        wthr: state.wthr
     }
 }
 

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import Input from './components/Input.js';
-import Save from './components/Save.js';
-import { getAddress } from './apis/api.js';
+import Input from './components/Input';
+import Save from './components/Save';
+import Weather from './components/Weather';
+import { getAddress } from './apis/api';
 import './App.css';
 
 
@@ -86,6 +87,7 @@ function App() {
       
       {address.city} {address.country}
     </div>
+     <Weather />
 
     </div>
 
