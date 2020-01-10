@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component matches the snapshot 1`] = `
+<div
+  className="container"
+>
+  <input
+    onChange={[Function]}
+    placeholder="name"
+    type="text"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="age"
+    type="text"
+    value=""
+  />
+  <input
+    onChange={[Function]}
+    placeholder="food"
+    type="text"
+    value=""
+  />
+  <div>
+    <button
+      className="saveBtn"
+      onClick={[Function]}
+    >
+      Save 
+      Name
+    </button>
+    <button
+      className="saveBtn"
+      onClick={[Function]}
+    >
+      Save 
+      Age
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Save Food
+    </button>
+  </div>
+  <div>
+    <div>
+      Loading...
+    </div>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      is it hot?
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      is it cold?
+    </button>
+    <div>
+      
+    </div>
+  </div>
+</div>
+`;
