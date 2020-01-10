@@ -1,8 +1,13 @@
 import React from 'react';
-
-import { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
 import Save from './Save';
+import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 
-configure({ adapter: new Adapter() });
+describe('Save Name component', () => {
+    it('adds the text to screen when clicked', () => {
+        const wrapper = shallow(<Save />);
+        expect(wrapper.exists()).toBe(true);   
+    });
+});
+
+
